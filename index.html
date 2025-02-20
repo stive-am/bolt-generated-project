@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Progress Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Coding Progress Tracker</h1>
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="logs.html">Logs</a>
+            <a href="goals.html">Goals</a>
+            <a href="settings.html">Settings</a>
+            <button id="darkModeToggle">Toggle Dark Mode</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="dashboard">
+            <h2>Dashboard</h2>
+            <div class="dashboard-content">
+                <div class="summary">
+                    <h3>Total Hours Coded: <span id="totalHours">0</span></h3>
+                    <h3>Most Recent Log: <span id="recentLog">N/A</span></h3>
+                </div>
+                <div class="charts">
+                    <canvas id="codingTrendsChart" width="400" height="200"></canvas>
+                    <canvas id="languageBreakdownChart" width="400" height="200"></canvas>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Coding Progress Tracker</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
